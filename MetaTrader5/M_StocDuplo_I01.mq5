@@ -5,7 +5,6 @@
 //+------------------------------------------------------------------+
 #property copyright "MarceloFSousa"
 #property link      "https://www.a4t.com.br"
-#property
 #property indicator_separate_window
 #property script_show_inputs
 
