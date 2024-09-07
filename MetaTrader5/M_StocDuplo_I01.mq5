@@ -1,10 +1,11 @@
 //+------------------------------------------------------------------+
 //|                                              M_StocDuplo_C01.mq5 |
-//|                                                   Marcelo Flores |
-//|                                                                  |
+//|                                                    MarceloFSousa |
+//|                                           https://www.a4t.com.br |
 //+------------------------------------------------------------------+
-#property copyright "Marcelo Flores"
-#property version   "1.00"
+#property copyright "MarceloFSousa"
+#property link      "https://www.a4t.com.br"
+#property
 #property indicator_separate_window
 #property script_show_inputs
 
