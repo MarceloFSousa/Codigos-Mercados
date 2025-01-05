@@ -1,0 +1,8 @@
+var 
+  vMedia : float;
+
+begin
+  vMedia := media(20,close);
+
+  plot(vMedia);
+end

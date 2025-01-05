@@ -1,0 +1,7 @@
+var 
+  pseudoObv : float;
+
+begin
+  if (close > open) then pseudoObv := pseudoObv[1] + quantity 
+  else if (close < open) then pseudoObv := pseudoObv[1] - quantity;
+end;

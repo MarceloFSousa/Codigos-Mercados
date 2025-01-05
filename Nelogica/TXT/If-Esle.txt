@@ -1,0 +1,4 @@
+begin 
+  if (close > open) then plot(1)
+  else (close < open) then plot(-1);
+end

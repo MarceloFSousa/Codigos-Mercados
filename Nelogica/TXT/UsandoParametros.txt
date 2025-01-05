@@ -1,0 +1,6 @@
+input 
+  TamanhoGatilho (500); 
+
+begin
+  if (high - low >= TamanhoGatilho) then paintbar(clyellow);
+end

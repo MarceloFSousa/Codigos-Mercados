@@ -1,15 +1,17 @@
 //+------------------------------------------------------------------+
-//|                                              M_StocDuplo_C01.mq5 |
+//|                                              M_StocDuplo_I01.mq5 |  
 //|                                                    MarceloFSousa |
 //|                                           https://www.a4t.com.br |
 //+------------------------------------------------------------------+
 #property copyright "MarceloFSousa"
 #property link      "https://www.a4t.com.br"
+#property description "https://www.a4t.com.br"
+
 #property indicator_separate_window
 #property script_show_inputs
 
-#property indicator_buffers 6
-#property indicator_plots   6
+#property indicator_buffers 4
+#property indicator_plots   4
 
 #property indicator_level1 80
 #property indicator_level2 20
@@ -38,10 +40,12 @@
 #property indicator_style4  STYLE_SOLID
 #property indicator_width4  1
 
+input group "Estocastico curto"
 input int     PeriodoStocC = 14; // Periodo estocastico curto
 input int     MediaStocC = 3; // Periodo media estocastico curto
 input int     SinalStocC = 3; // Periodo sinal estocastico curto
 
+input group "Estocastico longo"
 input int     PeriodoStocL = 84; // Periodo estocastico longo
 input int     MediaStocL = 18; // Periodo media estocastico longo
 input int     SinalStocL = 3; // Periodo sinal estocastico longo
@@ -66,6 +70,10 @@ int OnInit()
     SetIndexBuffer(1,sinalStocC,INDICATOR_DATA);
     SetIndexBuffer(2,stocL,INDICATOR_DATA);
     SetIndexBuffer(3,sinalStocL,INDICATOR_DATA);
+   IndicatorSetInteger(INDICATOR_LEVELCOLOR,0,C'58,58,58');
+   IndicatorSetInteger(INDICATOR_LEVELCOLOR,1,C'58,58,58');
+   IndicatorSetInteger(INDICATOR_LEVELSTYLE,0,0);
+   IndicatorSetInteger(INDICATOR_LEVELSTYLE,1,0);
 
     stocHandleC =iStochastic(_Symbol,_Period,PeriodoStocC,SinalStocC,MediaStocC,MODE_SMA,STO_LOWHIGH);
     stocHandleL =iStochastic(_Symbol,_Period,PeriodoStocL,SinalStocL,MediaStocL,MODE_SMA,STO_LOWHIGH);

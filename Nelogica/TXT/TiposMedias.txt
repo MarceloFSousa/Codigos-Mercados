@@ -1,0 +1,19 @@
+input
+  periodomedia (20);
+  tipomedia (0);
+//0 - Aritmetica
+//1 - Exponencial
+//2 - Welles Wilder
+//3 - Ponderada
+
+var 
+  m : float;
+
+begin
+  if tipomedia = 0 then m := media(periodomedia,close) else
+  if tipomedia = 1 then m := mediaexp(periodomedia,close) else
+  if tipomedia = 2 then m := wellessum(periodomedia,close,0)/periodomedia else
+  if tipomedia = 3 then m := waverage(close,periodomedia);
+
+  plot(m);
+end
