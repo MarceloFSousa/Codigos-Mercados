@@ -1,0 +1,4 @@
+begin 
+  if (close > open) and (volume > media(20,volume)) then paintbar(clteal)
+  else (close < open) and (volume > media(20,volume)) then plot(255);
+end

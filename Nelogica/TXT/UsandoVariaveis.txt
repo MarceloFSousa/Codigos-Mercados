@@ -1,0 +1,10 @@
+var 
+  sinalC, sinalV : boolean;
+
+begin
+  sinalC := (close > open);
+  sinalV := (close < open);
+  
+  if sinalC then paintbar(clteal) 
+  else if sinalV then paintbar(255);
+end;
