@@ -1,18 +1,12 @@
 //+------------------------------------------------------------------+
-<<<<<<< HEAD
 //|                                              M_StocDuplo_I01.mq5 |
-=======
-//|                                              M_StocDuplo_C01.mq5 |
->>>>>>> 2e75fb726bbfa4a04ad73160c6b843b162cc9d31
 //|                                                    MarceloFSousa |
 //|                                           https://www.a4t.com.br |
 //+------------------------------------------------------------------+
 #property copyright "MarceloFSousa"
 #property link      "https://www.a4t.com.br"
-<<<<<<< HEAD
 #property description "https://www.a4t.com.br"
-=======
->>>>>>> 2e75fb726bbfa4a04ad73160c6b843b162cc9d31
+
 #property indicator_separate_window
 #property script_show_inputs
 
